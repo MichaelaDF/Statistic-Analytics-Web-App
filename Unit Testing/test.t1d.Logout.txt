@@ -1,0 +1,38 @@
+Logout Test [T1d]
+
+Summary: Verify that the user can logout.
+
+Related files:
+	logout.php
+	index.php
+	includes/include.nav
+
+Used by:
+	dashboard.php
+	session.php
+	analytics.php
+
+Prerequisites:
+	- User is able to successfully login
+	
+Test Porocedure:
+	1.a. Login with valid credentials index.php
+	  b. Select "Logout" from the navigation bar
+	  c. Confirm that user is redirected to index.php
+	  
+Expected Result:
+	- Once "Logout" is selected user should be redirected to index.php
+	
+Actual Result:
+	Procedure 1: Achieved expected result
+	
+Status: PASS
+
+Created by: Michaela Day
+Created on: Wednesday, April 4 2018
+
+Tested by: Michaela Day
+Tested on: Friday, April 6 2018
+Test Environment:
+	OS: Windows 10
+	Browser: Google Chrome

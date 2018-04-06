@@ -1,0 +1,51 @@
+Session Table Test [T3a]
+
+Summary: Verify that session table displays selected information.
+
+Related files:
+	session.php
+	includes/SQL/sessions.sql.php
+	includes/session.tablepick.js
+
+Used by:
+	session.php
+
+Prerequisites:
+	- User is able to successfully login
+
+Test Porocedure:
+	1.a. Successfully login via index.php.
+	  b. Navigate to sessions.php.
+	  c. Choose a competitive season from the dropdown list.
+	  d. Choose a hero type from the dropdown list.
+	  e. Choose a map type from the dropdown list.
+
+Test Data:
+	1. Season Dates: [ 6: 2017-09-01 to 2017-10-28, 7: 2017-11-01 to 2017-12-29, 8: 2018-01-01 to 2018-02-25, 9: 2018-02-28 to 2018-04-28]
+	2. Hero Type: ["Support" includes heroes "Ana, Brigitte, Lucio, Mercy, Moira, Symmetra, Zenyatta", "Tank" includes heroes "D.Va, Orisa, Reinhardt, Roadhog, Winston, Zarya", "DPS" includes heroes "Bastion, Doomfist, Genji, Hanzo, Junkrat, McCree, Mei, Pharah, Reaper, Soldier:76, Sombra, Torbjorn, Tracer, Widowmaker"]
+	3. Map Types: ["Assault" includes maps "Hanamura, Horizon Lunar Colony, Temple of Anubis, Volskaya Industries", "Control" includes maps "Illios, Lijiang Tower, Nepal, Oasis", "Escort" includes maps "Dorado, Junkertown, Route 66, Watchpoint Gibraltar", "Hybrid" maps include "Blizzard World, Eichenwalde, Hollywood, Kings Row, Numbani"]
+	  
+Expected Result:
+	a. When first loaded, sessions.php automatically shows all matches.
+	b. If a competitive season is selected, the table is cleared and all sessions from that timeframe are shown, regardless of hero type or map type.
+	c. If a hero type is selected, the table is cleared and all sessions for that hero type are shown, regardless of competitive season or map type.
+	d. If a map type is selected, the table is cleared and all sessions for that map type are shown, regardless of competitive season or hero type.
+	e. If a category title is selected, the table is cleared and shows all matches.
+	
+Actual Result:
+	a. Achieved expected result
+	b. Achieved expected result
+	c. Achieved expected result
+	d. Achieved expected result
+	e. Achieved expected result
+	
+Status: PASS
+
+Created by: Michaela Day
+Created on: Tuesday, April 3 2018
+
+Tested by: Michaela Day
+Tested on: Friday, April 6 2018
+Test Environment:
+	OS: Windows 10
+	Browser: Google Chrome

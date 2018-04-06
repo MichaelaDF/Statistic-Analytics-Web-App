@@ -1,0 +1,53 @@
+Valid Username Test [T1a]
+
+Summary: Verify index.php displays the correct feedback during username entry.
+
+Related files:
+	includes/include.authentication.php
+	dataAccess/protected/usernames.txt
+	index.php
+
+Used by:
+	index.php
+
+Prerequisites:
+	- User has a keyboard for text input
+
+Assumptions:
+	- User will only use latin characters for username
+	- User will not attempt to hack into site via scripting
+	
+Test Porocedure:
+	1.a. In "Username" input field type in username.
+	  b. Press "Login" button.
+
+Test Data:
+	1. Bad Usernames(too short): ["", "1", "no"]
+	2. Bad Usernames(too long): ["001234567899", "thisnameiswaytoolongwow"]
+	3. Bad Usernames(not registered): ["cat", "0123456789", "root"]
+	3. Valid Usernames: ["Michaela", "Katie", "Kevin", "test", "admin"]
+	  
+Expected Result:
+	a. When entering a valid name there is no visible change to the page, any previous username alert is cleared.
+	b. If "username" field is empty an alert will appear with the message "Please enter a valid username."
+	c. If entered username is shorter than 3 characters an alert will appear with the message "Username must be 3-10 characters in length. (Current length: $LENGTH)"
+	d. If entered username is longer than 10 characters an alert will appear with the message "Username must be 3-10 characters in length. (Current length: $LENGTH)"
+	e. If entered username is an accepted length but not registered an alert will appear with the message "Username [$USERNAME] must be registered by site admin."
+	
+Actual Result:
+	a. Achieved expected result
+	b. Achieved expected result
+	c. Achieved expected result
+	d. Achieved expected result
+	e. Achieved expected result
+	
+Status: PASS
+
+Created by: Michaela Day
+Created on: Tuesday, April 3 2018
+
+Tested by: Michaela Day
+Tested on: Friday, April 6 2018
+Test Environment:
+	OS: Windows 10
+	Browser: Google Chrome

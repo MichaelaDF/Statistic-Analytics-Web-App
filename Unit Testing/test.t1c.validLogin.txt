@@ -1,0 +1,49 @@
+Valid Login Test [T1b]
+
+Summary: Verify index.php logs user in if valid login information is provided.
+
+Related files:
+	includes/include.authentication.php
+	dataAccess/protected/usernames.txt
+	index.php
+
+Used by:
+	index.php
+
+Prerequisites:
+	- User has a registered username
+	- User has a valid password
+
+Test Porocedure:
+	1.a. In "Username" input field type in a username.
+	  b. In "Password" input field type in a password.
+	  c. Click the "Login" button
+
+Test Data:
+	1. Bad Usernames: ["", "hi", "this name is way too long", "root"]
+	2. Good Usernames: ["Michaela", "test", "admin"]
+	3. Bad Passwords: ["", "123456789", "Abcdefghi"]
+	7. Valid Passwords: ["Ab!123456", "0000@Hey", "#aBc123aBc"]
+	  
+Expected Result:
+	a. If username and password are valid the user is redirected to dashboard.php.
+	b. If username is valid and password is invalid the page refreshes with an alert indicating the password error.
+	c. If username is invalid and password is valid the page refreshes with an alert indicating the username error.
+	d. If username and password are invalid the page refreshes with alerts indicating the username and password errors.
+	
+Actual Result:
+	a. Achieved expected result
+	b. Achieved expected result
+	c. Achieved expected result
+	d. Achieved expected result
+	
+Status: PASS
+
+Created by: Michaela Day
+Created on: Tuesday, April 3 2018
+
+Tested by: Michaela Day
+Tested on: Friday, April 6 2018
+Test Environment:
+	OS: Windows 10
+	Browser: Google Chrome

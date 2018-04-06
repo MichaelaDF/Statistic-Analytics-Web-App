@@ -1,0 +1,27 @@
+Master Test Plan
+Written by: Michaela Day
+Friday, April 6 2018
+
+This document outlines the unit tests that were used to verify the functionality of the Statistics Analytics web application.
+These tests were divided into 4 categories: 
+	T1 - User login/logout functionality
+	T2 - Additional $_SESSION functionality
+	T3 - MySQL database functionality
+	T4 - Google Charts functionality
+
+For each category unit tests were developed to attempt to identify any flaws in functionality or holes within the coding logic and ensure that any errors encountered were properly handled.
+For testing purposes, each of the unit tests were manually conducted to ensure intended functionality of the web application.
+The following tests were have been included with this test plan:
+	T1a - Valid Username Test - Verify index.php displays the correct feedback during username entry. [White Box]
+	T1b - Valid Password Test - Verify index.php displays the correct feedback during password entry. [White Box]
+	T1c - Valid Login Test - Verify index.php logs user in if valid login information is provided. [Black Box]
+	T1d - Logout Test - Verify that the user can logout. [Black Box]
+
+	T2a - Login Check Test - Verify that the user is redirected to the login page if they are not logged in. [Black Box]
+	T2b - Echo Username Test - Verify that the username the user used to login is displayed on the dashboard. [Black Box]
+
+	T3a - Session Table Test - Verify that session table displays selected information. [Grey Box]
+
+	T4a - Google Charts Test - Verify ability to connect to Google Charts API. [Grey Box]
+
+If you have any questions about these tests please email Michaela Day at mday127@mtroyal.ca.

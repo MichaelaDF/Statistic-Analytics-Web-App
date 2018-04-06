@@ -1,0 +1,42 @@
+Echo Username Test [T2b]
+
+Summary: Verify that the username the user used to login is displayed on the dashboard.
+
+Related files:
+	dashboard.php
+	index.php
+
+Used by:
+	dashboard.php
+
+Prerequisites:
+	- User is able to successfully login
+	- User is able to successfully logout
+	
+Test Porocedure:
+	1.a. Login with username(a) via index.php
+	  b. Confirm that username(a) is displayed on dashboard.php
+	  c. Select "Logout" from the navigation bar
+	  d. Login with a username(b) via index.php
+	  e. Confirm that username(b) is displayed on dashboard.php
+
+Test Data:
+	1. Usernames: "Michaela", "Katie", "Kevin", "test", "admin"
+	  
+Expected Result:
+	- When logged in with username(a), username(a) should be displayed on dashboard.php.
+	- When logged in with username(b), username(b) should be displayed on dashboard.php.
+	
+Actual Result:
+	Procedure 1: Achieved expected result
+	
+Status: PASS
+
+Created by: Michaela Day
+Created on: Thursday, April 5 2018
+
+Tested by: Michaela Day
+Tested on: Friday, April 6 2018
+Test Environment:
+	OS: Windows 10
+	Browser: Google Chrome

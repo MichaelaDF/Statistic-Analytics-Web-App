@@ -1,0 +1,41 @@
+Login Check Test [T2a]
+
+Summary: To verify that the user is redirected to the login page if they are not logged in.
+
+Related files:
+	includes/include.loginCheck.php
+	index.php
+
+Used by:
+	dashboard.php
+	sessions.php
+	analytics.php
+
+Prerequisites:
+	- User is able to successfully login
+	- User is able to successfully logout
+	
+Test Porocedure:
+	1.a. Login via index.php
+	  b. Select "Logout" on the navigation bar
+	  c. press the "back" button on the browser
+	  
+	2.a. Without logging in, type the dashboard's URL in the address bar
+
+Expected Result:
+	In both tests the user should be redirected to index.php to login before being granted access to other pages.
+	
+Actual Result:
+	Procedure 1: Achieved expected result
+	Procedure 2: Achieved expected result
+	
+Status: PASS
+
+Created by: Michaela Day
+Created on: Thursday, April 5 2018
+
+Tested by: Michaela Day
+Tested on: Friday, April 6 2018
+Test Environment:
+	OS: Windows 10
+	Browser: Google Chrome

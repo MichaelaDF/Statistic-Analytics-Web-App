@@ -1,0 +1,40 @@
+Google Charts Test [T4a]
+
+Summary: Verify ability to connect to Google Charts API.
+
+Related files:
+	includes/dashboard.drawCharts.php
+	includes/analytics.drawCharts.php
+
+Used by:
+	dashboard.php
+	analytics.php
+
+Prerequisites:
+	- Able to connect to mysql database
+	
+Test Porocedure:
+	1.a. Successfully login via index.php.
+	  b. Identify charts in "Analytics" row content in dashboard.php.
+	  c. Navigate to analytics.php.
+	  d. Identify charts in analytics.php.
+
+	  
+Expected Result:
+	a. When successfully connected to Google Charts API all 2 charts should be displayed on dashboard.php and seven charts should be displayed on analytics.php.
+	b. If a chart fails during construction the following error will be shown in the chart's <div> tag : "Error encountered, could not build chart: $ERROR_FEEDBACK"
+	
+Actual Result:
+	a. Achieved expected result
+	b. Achieved expected result
+	
+Status: PASS
+
+Created by: Michaela Day
+Created on: Wednesday, April 4 2018
+
+Tested by: Michaela Day
+Tested on: Friday, April 6 2018
+Test Environment:
+	OS: Windows 10
+	Browser: Google Chrome
